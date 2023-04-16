@@ -1,0 +1,250 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    border:none;
+    outline:none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+:root{
+    background-color:black;
+    
+
+}
+
+html{
+    font-size: 120%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(background-color);
+
+}
+
+section{
+    min-height: 100vh;
+    padding:10rem 8% 2rem;
+}
+
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 2rem 10%;
+    background: var(background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2.5rem;
+    color: aliceblue;
+    font-weight: 500;
+    cursor: default;
+}
+
+.navbar a {
+    font-size: 1.5rem;
+    color:aliceblue;
+    margin-left: 4rem;
+    transition:.3s;
+    
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color:aquamarine;
+}
+
+#menu{
+    font-size:3rem;
+    color:aliceblue;
+}
+
+.home{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.home-content h3{
+    font-size: 3rem;
+    font-weight: 400;
+    color: beige;
+}
+
+.home-content h1{
+    font-size:4.5rem;
+    font-weight: 500rem;
+    color: beige;
+    line-height: 1.2;
+}
+
+.social a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height:3rem;
+    background:transparent;
+    border:.2rem solid whitesmoke;
+    border-radius: 50%;
+    font-size:2rem;
+    color:aquamarine;
+    margin:3rem 1.5rem 3rem 0;
+    transition: .3s ease;
+}
+
+.social a:hover{
+    color:aquamarine;
+    background-color: aquamarine;
+    box-shadow: 0 0 1rem aquamarine;
+}
+
+.btn{
+    display:inline-block;
+    padding: 1rem 2rem;
+    background: var(aquamarine);
+    border-radius: 3rem ;
+    box-shadow:0 0 1rem aquamarine;
+    font-size: 1rem;
+    color: aquamarine;
+    font-weight: 400;
+    transition: .3 ease;
+}
+
+.btn:hover{
+    box-shadow: none;
+}
+
+.head{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.about-content h2{
+    text-align: center;
+    line-height: 1.2;
+    color: beige;
+    
+}
+
+.about-content h3{
+    font-size: 2.5rem;
+    color:beige;
+    text-align: center;
+}
+
+.about-content p{
+    font-size:1.5rem;
+    color:beige;
+    text-align: center;
+    margin: 2rem 0 2rem;
+}
+
+.skills h2{
+    color: beige;
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+.skill-container{
+    display:flex;
+    justify-content: center;
+    color: beige;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+
+.skill-container .skill-box{
+    flex: 1 1 30rem;
+    background: grey;
+    padding:3rem 2rem 4rem;
+    border-radius:2rem ;
+    text-align: center;
+    border: .2rem solid aquamarine;
+    transition: .5s ease;
+}
+
+.skill-container .skill-box:hover{
+    border-color: beige;
+    transform: scale(1);
+}
+
+.skill-box i{
+    font-size: 5rem;
+    color: aquamarine;
+
+}
+
+.skill-box h3{
+    font-size: 2.5rem;
+}
+
+.Contact h2{
+    color: beige;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.Contact form{
+    max-width: 60rem;
+    margin: 1rem auto;
+    text-align: center;
+
+}
+
+.Contact form .contact-content{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.Contact form .contact-content input,
+.Contact form textarea{
+    width:100%;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    color:grey;
+    border-radius: .8rem;
+    margin: .8rem 0;
+}
+
+.Contact form textarea{
+    resize: none;
+}
+
+.navbar{
+    position:absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: black;
+    border-top: .1rem solid grey;
+    box-shadow: 0 .5rem 1rem grey;
+    display: none;
+}
+
+.navbar.active{
+    display: block;
+}
+
+.navbar a{
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+}
+
+
